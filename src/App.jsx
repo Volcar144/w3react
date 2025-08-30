@@ -5,12 +5,12 @@ import { useState } from 'react';
 function MyButton() {
     const [count, setCount] = useState(0);
     function handleClick() {
-
+        setCount(count + 1);
     }
 
     return (
         <button onClick={handleClick}>
-             Click me 4 a message
+             You have clicked {count} times.
         </button>
     );
 }
@@ -44,7 +44,10 @@ function ShoppingList() {
     );
 }
 
+
+
 function App() {
+
     return (
         <div className="App">
             <h1>Hello World!</h1>
@@ -52,6 +55,8 @@ function App() {
             <Profile />
             <hr />
             <h3>Button Example</h3>
+            <p>Each one counts individually!!!</p>
+            <MyButton />
             <MyButton />
             <hr />
             <h3>Dynamical Mapped list example</h3>
