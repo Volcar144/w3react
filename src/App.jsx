@@ -1,6 +1,7 @@
 import "./User.jsx";
 import Profile from "./User.jsx";
 import { useState } from 'react';
+import DisplayTable from "./ProductTable.jsx";
 
 function MyButton() {
     const [count, setCount] = useState(0);
@@ -64,6 +65,9 @@ function App() {
             <hr />
             <h3>List Example with colours</h3>
             <ShoppingList />
+            <hr />
+            <h3>A filterable products table</h3>
+            <DisplayTable />
         </div>
     );
 }
